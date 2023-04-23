@@ -1,0 +1,47 @@
+body {
+    background-image: url("../images/startBackground.jpg");
+}
+
+.title {
+    text-align: center;
+    font-family: 'monserrat', sans-serif;
+    font-size: 300%;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+.mainTable table{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-spacing: 35px;
+    width: 35%;
+}
+
+.mainTable td{
+    border: 1px solid;
+    border-radius: 40px;
+    border-color: white;
+    background-color: white;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    width: 25%;
+    height: 35%;
+    padding: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.mainTable td:hover {
+    transform: scale(1.1);
+}
+
+.mainTable a{
+    text-decoration: underline;
+    color: black;
+}

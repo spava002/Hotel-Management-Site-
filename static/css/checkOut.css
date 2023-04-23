@@ -1,0 +1,101 @@
+body {
+    background-image: url("../images/backgroundCheckOut.jpg");
+    background-size: cover;
+}
+
+/*Styling related to the visit infromation*/
+.visitTitle {
+    font-family: 'monserrat', sans-serif;
+    text-decoration: underline;
+    display: inline;
+}
+
+#visitErrorMessage {
+    font-family: 'monserrat', sans-serif;
+    font-size: 16px;
+    color: red;
+}
+
+#visitFirstRow {
+    display: none;
+}
+
+#ReservationNumber {
+    width: 20%;
+    border-color: black;
+}
+
+#FirstName {
+    border-color: black;
+}
+
+#LastName {
+    border-color: black;
+}
+
+#RoomNumber {
+    width: 20%;
+    border-color: black;
+}
+
+.visitTable table, td {
+    width: 25%;
+}
+
+.visitTable table {
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-spacing: 35px;
+    border-radius: 40px;
+    border: 1px solid;
+    border-color: black;
+    background-color: white;
+}
+
+.visitTable td {
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.visitTable input {
+    width: 52%;
+}
+
+/*Styling related to the feedback*/
+.feedbackTitle {
+    font-family: 'monserrat', sans-serif;
+    text-decoration: underline;
+    display: inline;
+}
+
+.feedbackTable table, td {
+    width: 27%;
+}
+
+.feedbackTable table {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-spacing: 35px;
+    border-radius: 40px;
+    border: 1px solid;
+    border-color: black;
+    background-color: white;
+}
+
+.feedbackTable td {
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*Styling related to the final submission button*/
+
+.submitButton {
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
