@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Check-Out Success</title>
+        <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/checkOutSuccess.css') }}"></link>
+    </head>
+
+    <body>
+        <img src = "{{ url_for('static', filename = 'images/checkMark.png') }}" alt = "checkMark" height = 10% width = "10%">
+        <h4>You're all set!</h4>
+        <br>
+        <h5>Thank you for staying, we hope to see you again!</u></h5>
+        <a href = "{{ url_for('renderHome') }}">Back to Home</a>
+    </body>
+</html>

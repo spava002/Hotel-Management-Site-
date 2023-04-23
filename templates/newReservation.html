@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Reservation</title>
+        <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/newReservation.css') }}"></link>
+    </head>
+
+    <body>
+        <form action = "{{ url_for('submit') }}" method = "POST">
+            <!--Receive user's expected dates to stay at hotel-->
+            <div class = "dates">
+                <h4>What days would you like to stay for: </h4>
+                <div class = "inputTable">
+                    <table>
+                        <tr>
+                            <td>
+                                <div id = "StartDateError"></div>
+                                <div id = "FinalDateError"></div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>What days would you like to stay for:</th>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type = "text" id = "StartDate" name = "StartDate">
+                                <p> - </p>
+                                <input type = "text" id = "FinalDate" name = "FinalDate">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan = "2">
+                                <button id = "submitDates">Search</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            
+
+            <!--Buttons to navigate through floors of rooms-->
+
+            <button id = "leftButton">
+                <img src = "{{ url_for('static', filename = 'images/leftArrow.png') }}" alt = "LeftButton" height = 100% width = 50%>
+            </button>
+
+            <button id = "rightButton">
+                <img src = "{{ url_for('static', filename = 'images/rightArrow.png') }}" alt = "RightButton" height = "100%" width = "50%">
+            </button>
+
+            <div class = "firstFloorTable">
+                <table id = "firstFloorTable">
+                    <!--Table Header-->
+                    <thead>
+                        <th colspan = "7" id = "floorName">First Floor</th>
+                    </thead>
+
+                    <!--Row 1-->
+                    <tr>
+                        <td id = "Room109">109</td>
+                        <td id = "Room107">107</td>
+                        <td id = "Room105">105</td>
+                        <td id = "Room103">103</td>
+                        <td id = "Room101">101</td>
+                        <td class = "topBorder"></td>
+                        <td class = "stairs"><img src = "https://www.shareicon.net/data/128x128/2016/05/27/771757_stairs_512x512.png" alt = "Stairs" height = "50%" width = "50%"></td>
+                    </tr>
+
+                    <!--Row 2-->
+                    <tr>
+                        <td class = "leftBorder"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class = "rightBorder"></td>
+                    </tr>
+
+                    <!--Row 3-->
+                    <tr>
+                        <td id = "Room110">110</td>
+                        <td id = "Room108">108</td>
+                        <td id = "Room106">106</td>
+                        <td id = "Room104">104</td>
+                        <td id = "Room102">102</td>
+                        <td></td>
+                        <td class = "elevator"><img src = "https://cdn-icons-png.flaticon.com/512/857/857684.png?w=1480&t=st=1680829317~exp=1680829917~hmac=22cd1bde1179e4821dc5f68014e8edf37f1ef8f89b6931186a897143f73b37c6" alt = "Elevator" height = "50%" width = "50%"></td>
+                    </tr>
+
+                    <!--Row 4-->
+                    <tr>
+                        <td id = "Room119">119</td>
+                        <td id = "Room117">117</td>
+                        <td id = "Room115">115</td>
+                        <td id = "Room113">113</td>
+                        <td id = "Room111">111</td>
+                        <td></td>
+                        <td class = "elevator"><img src = "https://cdn-icons-png.flaticon.com/512/857/857684.png?w=1480&t=st=1680829317~exp=1680829917~hmac=22cd1bde1179e4821dc5f68014e8edf37f1ef8f89b6931186a897143f73b37c6" alt = "Elevator" height = "50%" width = "50%"></td>
+                    </tr>
+
+                    <!--Row 5-->
+                    <tr>
+                        <td class = "leftBorder"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class = "rightBorder"></td>
+                    </tr>
+
+                    <!--Row 6-->
+                    <tr>
+                        <td id = "Room120">120</td>
+                        <td id = "Room118">118</td>
+                        <td id = "Room116">116</td>
+                        <td id = "Room114">114</td>
+                        <td id = "Room112">112</td>
+                        <td class = "bottomBorder"></td>
+                        <td class = "stairs"><img src = "https://www.shareicon.net/data/128x128/2016/05/27/771757_stairs_512x512.png" alt = "Stairs" height = "50%" width = "50%"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class = "secondFloorTable">
+                <table id = "secondFloorTable">
+                    <!--Table Header-->
+                    <thead>
+                        <th colspan = "7" id = "floorName">Second Floor</th>
+                    </thead>
+
+                    <!--Row 1-->
+                    <tr>
+                        <td id = "Room209">209</td>
+                        <td id = "Room207">207</td>
+                        <td id = "Room205">205</td>
+                        <td id = "Room203">203</td>
+                        <td id = "Room201">201</td>
+                        <td class = "topBorder"></td>
+                        <td class = "stairs"><img src = "https://www.shareicon.net/data/128x128/2016/05/27/771757_stairs_512x512.png" alt = "Stairs" height = "50%" width = "50%"></td>
+                    </tr>
+
+                    <!--Row 2-->
+                    <tr>
+                        <td class = "leftBorder"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class = "rightBorder"></td>
+                    </tr>
+
+                    <!--Row 3-->
+                    <tr>
+                        <td id = "topLeftGym"></td>
+                        <td colspan = "3" id = "topGym">
+                            <img src = http://clipart-library.com/images_k/woman-lifting-weights-silhouette/woman-lifting-weights-silhouette-13.png alt = "WeightLifting" height = "80%" width = "20%">
+                        </td>
+                        <td id = "topRightGym"></td>
+                        <td></td>
+                        <td class = "elevator"><img src = "https://cdn-icons-png.flaticon.com/512/857/857684.png?w=1480&t=st=1680829317~exp=1680829917~hmac=22cd1bde1179e4821dc5f68014e8edf37f1ef8f89b6931186a897143f73b37c6" alt = "Elevator" height = "40%" width = "50%"></td>
+                    </tr>
+
+                    <!--Row 4-->
+                    <tr>
+                        <td id = "bottomLeftGym"></td>
+                        <td colspan = "3" id = "bottomGym"><b>Gym Area</b></td>
+                        <td id = "bottomRightGym"></td>
+                        <td></td>
+                        <td class = "elevator"><img src = "https://cdn-icons-png.flaticon.com/512/857/857684.png?w=1480&t=st=1680829317~exp=1680829917~hmac=22cd1bde1179e4821dc5f68014e8edf37f1ef8f89b6931186a897143f73b37c6" alt = "Elevator" height = "50%" width = "50%"></td>
+                    </tr>
+
+                    <!--Row 5-->
+                    <tr>
+                        <td class = "leftBorder"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class = "rightBorder"></td>
+                    </tr>
+
+                    <!--Row 6-->
+                    <tr>
+                        <td id = "Room210">210</td>
+                        <td id = "Room208">208</td>
+                        <td id = "Room206">206</td>
+                        <td id = "Room204">204</td>
+                        <td id = "Room202">202</td>
+                        <td class = "bottomBorder"></td>
+                        <td class = "stairs"><img src = "https://www.shareicon.net/data/128x128/2016/05/27/771757_stairs_512x512.png" alt = "Stairs" height = "50%" width = "50%"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class = "thirdFloorTable">
+                <table id = "thirdFloorTable">
+                    <!--Table Header-->
+                    <thead>
+                        <th colspan = "7" id = "floorName">Third Floor</th>
+                    </thead>
+                    
+                    <!--Row 1-->
+                    <tr>
+                        <td id = "Room309">309</td>
+                        <td id = "Room307">307</td>
+                        <td id = "Room305">305</td>
+                        <td id = "Room303">303</td>
+                        <td id = "Room301">301</td>
+                        <td class = "topBorder"></td>
+                        <td class = "stairs"><img src = "https://www.shareicon.net/data/128x128/2016/05/27/771757_stairs_512x512.png" alt = "Stairs" height = "50%" width = "50%"></td>
+                    </tr>
+
+                    <!--Row 2-->
+                    <tr>
+                        <td class = "leftBorder"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class = "rightBorder"></td>
+                    </tr>
+
+                    <!--Row 3-->
+                    <tr>
+                        <td id = "topLeftPool"></td>
+                        <td colspan = "3" id = "topPool">
+                            <img src = http://clipart-library.com/data_images/476733.png alt = "Pool" height = "80%" width = "30%">
+                        </td>
+                        <td id = "topRightPool"></td>
+                        <td></td>
+                        <td class = "elevator"><img src = "https://cdn-icons-png.flaticon.com/512/857/857684.png?w=1480&t=st=1680829317~exp=1680829917~hmac=22cd1bde1179e4821dc5f68014e8edf37f1ef8f89b6931186a897143f73b37c6" alt = "Elevator" height = "40%" width = "50%"></td>
+                    </tr>
+
+                    <!--Row 4-->
+                    <tr>
+                        <td id = "bottomLeftPool"></td>
+                        <td colspan = "3" id = "bottomPool"><b>Pool Area</b></td>
+                        <td id = "bottomRightPool"></td>
+                        <td></td>
+                        <td class = "elevator"><img src = "https://cdn-icons-png.flaticon.com/512/857/857684.png?w=1480&t=st=1680829317~exp=1680829917~hmac=22cd1bde1179e4821dc5f68014e8edf37f1ef8f89b6931186a897143f73b37c6" alt = "Elevator" height = "50%" width = "50%"></td>
+                    </tr>
+
+                    <!--Row 5-->
+                    <tr>
+                        <td class = "leftBorder"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class = "rightBorder"></td>
+                    </tr>
+
+                    <!--Row 6-->
+                    <tr>
+                        <td id = "Room310">310</td>
+                        <td id = "Room308">308</td>
+                        <td id = "Room306">306</td>
+                        <td id = "Room304">304</td>
+                        <td id = "Room302">302</td>
+                        <td class = "bottomBorder"></td>
+                        <td class = "stairs"><img src = "https://www.shareicon.net/data/128x128/2016/05/27/771757_stairs_512x512.png" alt = "Stairs" height = "50%" width = "50%"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <table id = "dataTable">
+            <tr>
+                <th>Reservation Number</th>
+                <th>Start Date</th>
+                <th>Final Date</th>
+                <th>Room Number</th>
+            </tr>
+            {% for person in data %}   
+                <tr>
+                    <td>{{ person.reservationNumber }}</td>
+                    <td>{{ person.startDate }}</td>
+                    <td>{{ person.finalDate }}</td>
+                    <td>{{ person.room }}</td>
+                </tr>
+            {% endfor %}
+            </table>
+
+            <!--Area where user inputs their personal information-->
+            <div class = "personalTable">
+                <table>
+                    <tr class = "chosenRoomRow">
+                        <td colspan = "2">
+                            <div class = "chosenRoom">
+                                <div id = "ChosenRoomText">You have chosen Room #</div>
+                                <input type = "text" id = "ChosenRoomNumber" name = "ChosenRoomNumber">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr id = "personalFirstRow">
+                        <td colspan = "2">
+                            <div id = "personalErrorMessage"></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3 class = "personalTitle">Personal Information</h2>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            First Name: 
+                            <input type = "text" id = "FirstName" name = "FirstName">
+                        </td>
+                        <td>
+                            Last Name: 
+                            <input type = "text" id = "LastName" name = "LastName">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Phone: 
+                            <input type = "text" id = "Phone" name = "Phone">
+                        </td>
+                        <td>
+                            Email: 
+                            <input type = "text" id = "Email" name = "Email">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Card Number: 
+                            <input type = "text" id = "CardNumber" name = "CardNumber">
+                        </td>
+                        <td>
+                            CVV: 
+                            <input type = "text" id = "CVV" name = "CVV">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <input class = "submitButton" type = "submit" value = "Done"></input>
+        </form>
+
+        <script src = "{{ url_for('static', filename = 'js/dateChecker.js') }}"></script>
+        <script src = "{{ url_for('static', filename = 'js/updateRoomsStatus.js') }}"></script>
+        <script src = "{{ url_for('static', filename = 'js/roomButton.js') }}"></script>
+        <script src = "{{ url_for('static', filename = 'js/roomSelector.js') }}"></script>
+        <script src = "{{ url_for('static', filename = 'js/personalChecker.js') }}"></script>
+    </body>
+</html>

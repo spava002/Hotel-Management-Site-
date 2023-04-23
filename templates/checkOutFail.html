@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Check-Out Failed</title>
+        <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/checkOutFail.css') }}"></link>
+    </head>
+
+    <body>
+        <img src = "{{ url_for('static', filename = 'images/X-Mark.png') }}" alt = "X-Mark" height = 10% width = "10%">
+        <br>
+        <h4>We couldn't find that reservation number!</h4>
+        <br>
+        <h5>If you don't remember your reservation number, <br>please consult our staff at the front desk.</u></h5>
+        <a href = "{{ url_for('renderHome') }}">Back to Home</a>
+    </body>
+</html>

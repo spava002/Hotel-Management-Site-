@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Database</title>
+        <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/database.css') }}">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Reservation Number</th>
+                <th>Start Date</th>
+                <th>Final Date</th>
+                <th>Room Number</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Card Number</th>
+                <th>CVV</th>
+                <th>Date Created</th>
+            </tr>
+            {% for person in data %}   
+                <tr>
+                    <td>{{ person.reservationNumber }}</td>
+                    <td>{{ person.startDate }}</td>
+                    <td>{{ person.finalDate }}</td>
+                    <td>{{ person.room }}</td>
+                    <td>{{ person.firstName }}</td>
+                    <td>{{ person.lastName }}</td>
+                    <td>{{ person.phone }}</td>
+                    <td>{{ person.email }}</td>
+                    <td>{{ person.cardNumber }}</td>
+                    <td>{{ person.CVV }}</td>
+                    <td>{{ person.dateCreated }}</td>
+                    <td>
+                        <a href = "/delete-person/{{person.id}}">Delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

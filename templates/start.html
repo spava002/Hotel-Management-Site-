@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pacific Breeze Inn Co.</title>
+        <link rel = "stylesheet" type = text/css href = "{{ url_for('static', filename = 'css/start.css') }}"></link>
+    </head>
+
+    <body>
+        <h1 class = "title">SCH Software Systems</h1>
+        <hr>
+        <!--Main content of the start page-->
+        <div class = "mainTable">
+            <table>
+                <!--First row in main table-->
+                <tr>
+                    <td>
+                        <img src = "{{ url_for('static', filename = 'images/calendarImg.jpg') }}" alt = "Calendar" width = 20% height = 20%>
+                        <br>  
+                        <a href = "{{ url_for('renderNewReservation') }}">New Reservation</a>
+                    </td>
+                    <td>
+                        <img src = "{{ url_for('static', filename = 'images/exitingImg.png') }}" alt = "Leaving" width = 15% height = 15%>
+                        <br>
+                        <a href = "{{ url_for('renderCheckOut') }}">Check-Out</a>
+                    </td>
+                </tr>
+
+                <!--Second row in main table-->
+                <tr>
+                    <td>
+                        <img src = "{{ url_for('static', filename = 'images/phoneImg.png') }}" alt = "Red Phone" width = 20% height = 20%>
+                        <br>
+                        <a href = "{{ url_for('renderNeedHelp') }}">Need Help?</a>
+                    </td>
+                    <td>
+                        <img src = "{{ url_for('static', filename = 'images/bell.png') }}" alt = "Red Phone" width = 20% height = 20%>
+                        <br>
+                        <a href = "{{ url_for('renderServices') }}">Our Services</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
