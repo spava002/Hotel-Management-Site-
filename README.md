@@ -3,7 +3,7 @@ A hotel management website under the name of SCH Software Systems. This is a 202
 
 </br>
 
-Contributors: </br>
+<u>Contributors:</u> </br>
 
 <b>Sebastian Pava - Frontend and Backend</b> </br>
       - HTML: start.html, newReservation.html, reservationFinal.html, checkOut.html, checkOutSuccess.html,         checkOutFail.html, database.html </br>
@@ -11,14 +11,14 @@ Contributors: </br>
       - JavaScript: dateChecker.js (First iteration - Basic functionalities), personalChecker.js, roomButton.js, roomSelector.js, updateRoomsStatus.js, visitChecker.js </br>
       - Database (Flask): example.db, app.py </br>
       
-Abel Yara - Frontend </br>
+<b>Abel Yara</b> - Frontend </br>
       - HTML: services.html </br>
       - CSS: services.css </br>
       - JavaScript: dateChecker.js (Second iteration - Improvement to basic functionalities) </br>
       
-Robens Duverny - Frontend </br>
+<b>Robens Duverny</b> - Frontend </br>
       - HTML: needHelp.html </br>
       - CSS: needHelp.css </br>
       
-Dario Castillo - Frontend </br>
+<b>Dario Castillo</b> - Frontend </br>
       - CSS: checkOut.css (Styling of page) </br>
