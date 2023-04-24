@@ -3,7 +3,7 @@ A hotel management website under the name of SCH Software Systems. This is a 202
 
 </br>
 
-<u>Contributors:</u> </br>
+Contributors: </br>
 
 <b>Sebastian Pava - Frontend and Backend</b> </br>
       - HTML: start.html, newReservation.html, reservationFinal.html, checkOut.html, checkOutSuccess.html,         checkOutFail.html, database.html </br>
