@@ -9,7 +9,7 @@ Contributors: </br>
       - HTML: start.html, newReservation.html, reservationFinal.html, checkOut.html, checkOutSuccess.html,         checkOutFail.html, database.html </br>
       - CSS: start.css, newReservation.css, reservationFinal.css, checkOut.css (Basic framework of page), checkOutSuccess.css, checkOutFail.css, database.css </br>
       - JavaScript: dateChecker.js (First iteration - Basic functionalities), personalChecker.js, roomButton.js, roomSelector.js, updateRoomsStatus.js, visitChecker.js </br>
-      - Database (Flask): example.db, app.py </br>
+      - Database/Python (Flask): example.db, app.py </br>
       
 <b>Abel Yara - Frontend</b> </br>
       - HTML: services.html </br>
