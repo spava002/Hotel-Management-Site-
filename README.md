@@ -11,14 +11,14 @@ Contributors: </br>
       - JavaScript: dateChecker.js (First iteration - Basic functionalities), personalChecker.js, roomButton.js, roomSelector.js, updateRoomsStatus.js, visitChecker.js </br>
       - Database (Flask): example.db, app.py </br>
       
-<b>Abel Yara</b> - Frontend </br>
+<b>Abel Yara - Frontend</b> </br>
       - HTML: services.html </br>
       - CSS: services.css </br>
       - JavaScript: dateChecker.js (Second iteration - Improvement to basic functionalities) </br>
       
-<b>Robens Duverny</b> - Frontend </br>
+<b>Robens Duverny - Frontend</b> </br>
       - HTML: needHelp.html </br>
       - CSS: needHelp.css </br>
       
-<b>Dario Castillo</b> - Frontend </br>
+<b>Dario Castillo - Frontend</b> </br>
       - CSS: checkOut.css (Styling of page) </br>
